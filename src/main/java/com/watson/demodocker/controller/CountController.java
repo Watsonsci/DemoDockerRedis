@@ -14,6 +14,7 @@ public class CountController {
     public String count(){
         Long increment = redisTemplate.opsForValue().increment("count-people");
         return increment+ " already visited this website.";
+
     }
 
 }
